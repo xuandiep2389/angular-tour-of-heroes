@@ -1,4 +1,16 @@
 <h2>My Heroes</h2>
+<div>
+  <label>Hero name:
+      <input #heroName />
+  </label>
+
+  <!-- (click) pass input value to add() then clear the input -->
+  <button (click)="add(heroName.value); heroName.value= '' ">
+    add
+  </button>
+</div>
+
+
 
 <ul class="heroes">
 
